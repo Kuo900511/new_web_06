@@ -1,0 +1,58 @@
+/* 廣告彈窗樣式 */
+.ad-popup {
+  position: fixed;
+  width: 100%; /* 容器寬度占營幕的 90% */
+  max-width: 300px; /* 最大寬度不超過 400px */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  /*border-radius: 8px;*/
+  opacity: 0; /* 初始透明 */
+  transition: opacity 0.8s ease; /* 設置透明度過渡動畫 */
+  display: none; /* 初始隱藏 */
+  z-index: 1000;
+  text-align: center;
+}
+
+/* 圖片樣式 */
+
+.ad-popup img {
+    width: 100%; /* 將圖片寬度設為容器的 100% */
+    max-width: 300px; /* 設置最大寬度，防止圖片過大 */
+    height: auto; /* 保持圖片比例縮放 */
+    display: block;
+    margin: 0 auto; /* 讓圖片居中 */
+}
+
+.ad-popup p {
+  margin: 0 0 10px;
+}
+
+.ad-popup.active {
+    opacity: 1; /* 完全顯示 */
+  }
+
+/* 調整關閉按鈕樣式 */
+.ad-popup img#closeAd {
+    position: absolute;
+    top: 10px; /* 距離容器頂部 */
+    left: 10px; /* 距離容器左側 */
+    width: 30px; /* 設置圖片寬度 */
+    height: auto; /* 保持比例 */
+    cursor: pointer; /* 鼠標變成點擊手勢 */
+}
+
+#adPopup button:hover {
+  background: #d32f2f;
+}
+
+#nextPageButton {
+  cursor: pointer; /* 鼠標變成點擊手勢 */
+}
+
+#lastPageButton {
+  cursor: pointer; /* 鼠標變成點擊手勢 */
+}
