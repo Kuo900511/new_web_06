@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const scrollPosition = window.scrollY;
   
       // 如果滾動到某個位置（例如大於 500px），顯示廣告
-      if (scrollPosition > 1100) {  //手機版要設成1293
+      if (scrollPosition > 1255) {  //手機版要設成1293
         if (!adPopup.classList.contains("active")) {
             adPopup.style.display = "block"; // 顯示廣告
             setTimeout(() => {
